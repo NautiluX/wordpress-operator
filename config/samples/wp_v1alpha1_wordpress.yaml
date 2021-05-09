@@ -1,0 +1,6 @@
+apiVersion: wp.ntlx.org/v1alpha1
+kind: Wordpress
+metadata:
+  name: wordpress-sample
+spec:
+  url: example.com

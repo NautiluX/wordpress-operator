@@ -1,0 +1,19 @@
+domain: ntlx.org
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: wordpress-operator
+repo: github.com/NautiluX/wordpress-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: ntlx.org
+  group: wp
+  kind: Wordpress
+  path: github.com/NautiluX/wordpress-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
